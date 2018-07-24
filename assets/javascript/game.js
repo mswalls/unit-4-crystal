@@ -36,21 +36,21 @@ $("#total").text(userguess);
 }
 
 function win () {
-    wins++;
-    $("#wins").text("Wins: " + wins);
+    wins += 1;
+    $("#wins").text(wins);
     reset();
 }
 
 function lose () {
-    losses++;
-    $("#losses").text("Losses: " + losses);
+    losses += 1;
+    $("#losses").text(losses);
     reset();
 }
 
 $("#red").on("click", function() {
     userguess = userguess + rednum;
     $("#total").text(userguess);
-    if (userguess == computerguess) {
+    if (userguess === computerguess) {
         win();
         alert("you win")
     }

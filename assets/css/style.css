@@ -1,0 +1,25 @@
+.jumbotron {
+    text-align: center;
+    
+}
+body {
+    background-size: cover; 
+}
+
+#panel {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    border: black, 1px, solid;
+    
+
+}
+
+#numbertomatch {
+    text-align: center;
+
+}
+
+#inst {
+    text-align: center;
+}

@@ -14,67 +14,87 @@
 
 </head>
 
-<body>
+<body background="assets/images/intersection.png">
 
     <div class="jumbotron jumbotron-fluid">
         <h1>Crystal Collector!</h1>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
 
-            <div class="col-sm-6">
-                <p>Welcome to Crystal Collector at the beginning of each game you will be assigned a random number.</p>
-                <p>The four crystals below each contain a hidden random value, click a crystal to find out what its hidden value
-                    is!
-                </p>
-                <p>To win the game add the hidden crystal values together to total the assigned random number, but be careful!
-                    Going over your assigned random number will result in a loss
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <p id="wins">Wins:0</p>
-                <p id="Losses">Losses:0</p>
+            <div class="col-sm-6" "panel panel-default" id="panel">
+                <div class="panel-heading" id="inst">
+                    <h2> Instructions</h2>
+                </div>
+                <div class="panel-body">
+
+                    <p>Welcome to Crystal Collector at the beginning of each game you will be assigned a random number.</p>
+                    <p>The four crystals below each contain a hidden random value, click a crystal to find out what its hidden
+                        value is!
+                    </p>
+                    <p>To win the game add the hidden crystal values together to total the assigned random number, but be careful!
+                        Going over your assigned random number will result in a loss
+                    </p>
+                </div>
             </div>
 
+            <div class="col-sm-3" "panel panel-default" id="winp">
+                <div class="panel-heading">
+                    <h2>Wins</h2>
+                </div>
+
+
+                <div class="panel-body">
+                    <p id="wins">0</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3" "panel panel-default" id="lossp">
+            <div class="panel-heading">
+                <h2>Losses</h2>
+            </div>
+            <div class="panel-body">
+                    
+                <p id="losses">0</p>
+            
+            </div>
+            </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-6" "Number to match">
-                <h2>Here's your number:
-                    <span id="computernumber"></span>
-                </h2>
-            </div>
-
-        </div>
-
-        <div class="row" "crytals">
-            <div class="col-sm-3" "red">
-                <img src="assets/images/red-crystal.png" alt="red crystal" id="red" class="center-block">
-            </div>
-            <div class="col-sm-3" "blue">
-                <img src="assets/images/blue-crystal.png" alt="blue crystal" id="blue" class="center-block">
-            </div>
-            <div class="col-sm-3" "purple">
-                <img src="assets/images/purple-crystal.png" alt="purple crystal" id="purple" class="center-block">
-            </div>
-            <div class="col-sm-3" "yellow">
-                <img src="assets/images/yellow-crystal.png" alt="yellow-crystal" id="yellow" class="center-block">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6" "totalnumber">
-                <h2>Your total Guess:
-                    <span id="total"></span>
-                </h2>
-            </div>
-        </div> 
-
-
 
     </div>
+
+    <div class="row">
+        <div class="col-sm-6" id="numbertomatch">
+            <h2>Here's your number:
+                <span id="computernumber"></span>
+            </h2>
+        </div>
+
+    </div>
+
+    <div class="row" "crytals">
+        <div class="col-sm-2" "red">
+            <img src="assets/images/red-crystal.png" alt="red crystal" id="red" class="center-block" style="height: 300px; width: 200px;">
+        </div>
+        <div class="col-sm-2" "blue">
+            <img src="assets/images/blue-crystal.png" alt="blue crystal" id="blue" class="center-block" style="height: 300px; width: 200px;">
+        </div>
+        <div class="col-sm-2" "purple">
+            <img src="assets/images/purple-crystal.png" alt="purple crystal" id="purple" class="center-block" style="height: 300px; width: 200px;">
+        </div>
+        <div class="col-sm-2" "yellow">
+            <img src="assets/images/yellow-crystal.png" alt="yellow-crystal" id="yellow" class="center-block" style="height: 300px; width: 200px;">
+        </div>
+        <div class="col-sm-4" "totalnumber">
+            <h2>Your total Guess:
+                <span id="total"></span>
+            </h2>
+        </div>
+    </div>
+
+    < </div>
 
 
 
